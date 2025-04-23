@@ -1,0 +1,82 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.c9/
+.settings/
+.loadpath
+.factorypath
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+log/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# Arquivos de sistema
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Teste
+test-output/
+
+# Arquivos de build que não devem ir pro controle de versão
+build/
+bin/
+*.class
+
+# Arquivos gerados por ferramentas de cobertura de testes
+jacoco.exec
+*.ec
+*.exec
+
+# Arquivos de configuração de container/local dev
+.env
+*.env
+*.local
+docker-compose.override.yml
+
+# Arquivos de IDEs baseadas em Java
+*.rej
+*.orig
+
+# Arquivos do Spring Boot Devtools
+.spring-boot-devtools.properties
+
+# Outros
+*.log.*
+*.sublime-*
+.idea_modules/
+
