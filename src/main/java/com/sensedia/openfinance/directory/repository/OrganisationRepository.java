@@ -10,6 +10,4 @@ import java.util.List;
 
 @Repository
 public interface OrganisationRepository extends JpaRepository<Organisation, Long> {
-    @Query("SELECT o FROM Organisation o WHERE o.status = 'ACTIVE' AND o.id != :organisationId")
-    List<Organisation> findAllActiveExcept(@Param("organisationId") Long organisationId);
 }

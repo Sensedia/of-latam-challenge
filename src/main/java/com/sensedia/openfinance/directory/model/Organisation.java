@@ -23,11 +23,5 @@ public class Organisation {
 
     private String organisationName;
 
-    @Enumerated(STRING)
-    private OrganisationStatus status;
-
-    @Enumerated(STRING)
-    private OrganisationSubStatus subStatus;
-
     private boolean isActive;
 }

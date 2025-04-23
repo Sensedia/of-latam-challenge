@@ -53,9 +53,7 @@ public class OrganisationController {
                     organisationDTO.setId(id);
                     Organisation organisation = organisationMapper.toEntity(organisationDTO);
                     organisationService.updateOrganisationStatus(
-                        organisation,
-                        organisationDTO.getStatus(),
-                        organisationDTO.getSubStatus()
+                        organisation
                     );
                     return ResponseEntity.ok(organisationDTO);
                 })
@@ -74,15 +72,8 @@ public class OrganisationController {
             @PathVariable Long id,
             @Valid @RequestBody OrganisationDTO organisationDTO) {
         
-        return organisationService.getOrganisationById(id)
-                .map(existingOrg -> {
-                    organisationService.updateOrganisationStatus(
-                        existingOrg,
-                        organisationDTO.getStatus(),
-                        organisationDTO.getSubStatus()
-                    );
-                    return ResponseEntity.ok(organisationMapper.toDTO(existingOrg));
-                })
-                .orElse(ResponseEntity.notFound().build());
+        //code here
+        throw new UnsupportedOperationException("not implemented");
+
     }
 }
